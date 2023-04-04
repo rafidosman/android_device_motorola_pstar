@@ -1,0 +1,13 @@
+on mmi-priority
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules bq2597x_mmi mmi_parallel_charger mmi_parallel_charger_qc3p
+
+on fs
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules wl2866d sx937x_sar st21nfc mmi_relay touchscreen_mmi stmicro_mmi
+
+on boot
+# NFC
+   chown nfc nfc /dev/st21nfc
+   chmod 0660 /dev/st21nfc
+# Touchscreen
+   chown system system /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/double_click
+   chown system system /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/single_click
