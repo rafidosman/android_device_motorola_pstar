@@ -28,8 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.device.rc \
-    $(LOCAL_PATH)/rootdir/bin/neofetch:$(TARGET_COPY_OUT_SYSTEM)/bin/neofetch
+    init.device.rc
 
 # NFC
 PRODUCT_PACKAGES += \
