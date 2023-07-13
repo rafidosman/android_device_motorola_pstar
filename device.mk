@@ -14,8 +14,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResPstar \
+    SettingsResBerlin \
     SystemUIResPstar \
-    SettingsProviderResPstar
+    SettingsProviderResPstar \
+    WifiResPstar
 
 # Audio
 PRODUCT_COPY_FILES += \

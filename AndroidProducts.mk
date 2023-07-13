@@ -5,12 +5,12 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pstar.mk
+    $(LOCAL_DIR)/aosp_pstar.mk
 
 COMMON_LUNCH_CHOICES := \
-		lineage_pstar-user \
-		lineage_pstar-userdebug \
-		lineage_pstar-eng
+		aosp_pstar-user \
+		aosp_pstar-userdebug \
+		aosp_pstar-eng
 
 #signkeys
--include vendor/extra/product.mk
+# -include vendor/extra/product.mk
